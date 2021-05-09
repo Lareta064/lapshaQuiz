@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<link rel="stylesheet" href="css/main.css"/>
+		<title>Page</title>
+	</head>
+	<body>
+		<section class="quiz">
+			<h2>Ответьте на вопросы</h2>
+			<div class="quiz-content">
+				<!-- =========== plate #1 ===========-->
+				<div class="plate plate-1 plate--active">
+					<div class="plate-header">
+						<div class="plate-header__text">
+							<p>Для чего нужно видеонаблюдение?</p>
+						</div>
+						<div class="plate-header__number">
+							<p>1/7</p>
+						</div>
+					</div>
+					<div class="plate__progress-bar">
+						<div class="plate__progress-value"></div>
+					</div>
+					<div class="plate-body"> 
+						<div class="plate-form plate-cards">
+							<!-- одна карточка-->
+							<div class="plate-cards__item"> 
+								<label class="active">
+									<div class="label-img"><img src="img/2.jpg" alt="img" width="250"/></div>
+									<input type="radio" name="cam_purpose" value="для_магазина"/><span class="fake-radiobutton"></span>
+									<p>Для магазина</p>
+								</label>
+							</div>
+							<!-- одна карточка-->
+							<div class="plate-cards__item">
+								<label>
+									<div class="label-img"><img src="img/3.jpg" alt="img" width="250"/></div>
+									<input type="radio" name="cam_purpose" value="для_офиса"/><span class="fake-radiobutton"></span>
+									<p>Для офиса</p>
+								</label>
+							</div>
+							<!-- одна карточка-->
+							<div class="plate-cards__item"> 
+								<label>
+									<div class="label-img"><img src="img/1.jpg" alt="img" width="250"/></div>
+									<input type="radio" name="cam_purpose" value="для_дома"/><span class="fake-radiobutton"></span>
+									<p>Для загородного дома</p>
+								</label>
+							</div>
+							<!-- одна карточка-->
+							<div class="plate-cards__item">
+								<label>
+									<div class="label-img"><img src="img/4.jpg" alt="img" width="250"/></div>
+									<input type="radio" name="cam_purpose" value="другое"/><span class="fake-radiobutton"></span>
+									<p>Другое</p>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="plate-footer">
+						<button class="next-btn">Далее</button>
+					</div>
+				</div>
+				<!-- =========== plate #2 ===========-->
+				<div class="plate plate-2">
+					<div class="plate-header">
+						<div class="plate-header__text">
+							<p>Сколько камер понадобится?</p>
+						</div>
+						<div class="plate-header__number">
+							<p>2/7</p>
+						</div>
+					</div>
+					<div class="plate__progress-bar">
+						<div class="plate__progress-value"></div>
+					</div>
+					<div class="plate-body">
+						<div class="plate-title"></div>
+						<div class="plate-form plate-counter"> 
+							<div class="counter-block"><span class="increase-btn" id="increase-btn">-</span>
+								<input id="counter-value" type="text" name="cam_count" value="1"/><span class="decrease-btn" id="decrease-btn">+</span>
+							</div>
+						</div>
+					</div>
+					<div class="plate-footer"> 
+						<button class="back-btn">Назад</button>
+						<button class="next-btn">Далее</button>
+					</div>
+				</div>
+				<!-- =========== plate #3 ===========-->
+				<div class="plate plate-3">
+					<div class="plate-header">
+						<div class="plate-header__text">
+							<p>Требуется ли монтаж оборудования?</p>
+						</div>
+						<div class="plate-header__number">
+							<p>3/7</p>
+						</div>
+					</div>
+					<div class="plate__progress-bar">
+						<div class="plate__progress-value"></div>
+					</div>
+					<div class="plate-body">
+						<div class="plate-form plate-row--radio">
+							<div class="plate__flex-wrapper">
+								<label>
+									<input type="radio" name="cam_installation" value="монтаж_нужен"/>
+									<div class="fake-radiobutton"></div><span>да, требуется</span>
+								</label>
+								<label>
+									<input type="radio" name="cam_installation" value="монтаж_не_нужен"/>
+									<div class="fake-radiobutton"></div><span>нет, не требуется</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="plate-footer">
+						<button class="back-btn">Назад</button>
+						<button class="next-btn">Далее</button>
+					</div>
+				</div>
+				<!-- =========== plate #4 ===========-->
+				<div class="plate plate-4">
+					<div class="plate-header">
+						<div class="plate-header__text">
+							<p>Как долго надо хранить записи с видеокамер?</p>
+						</div>
+						<div class="plate-header__number">
+							<p>4/7</p>
+						</div>
+					</div>
+					<div class="plate__progress-bar">
+						<div class="plate__progress-value"></div>
+					</div>
+					<div class="plate-body">
+						<div class="plate-form">
+							<div class="plate-form plate-cards">
+								<!-- одна карточка-->
+								<div class="plate-cards__item"> 
+									<label class="active">
+										<div class="label-img"><img src="img/7.jpg" alt="img" width="160"/></div>
+										<input type="radio" name="longevity" value="хранить_7_дней"/><span class="fake-radiobutton"></span>
+										<p>7 дней</p>
+									</label>
+								</div>
+								<!-- одна карточка-->
+								<div class="plate-cards__item">
+									<label>
+										<div class="label-img"><img src="img/14.jpg" alt="img" width="160"/></div>
+										<input type="radio" name="longevity" value="хранить_14_дней"/><span class="fake-radiobutton"></span>
+										<p>14 дней (рекомендуется)</p>
+									</label>
+								</div>
+								<!-- одна карточка-->
+								<div class="plate-cards__item"> 
+									<label>
+										<div class="label-img"><img src="img/30.jpg" alt="img" width="160"/></div>
+										<input type="radio" name="longevity" value="хранить_30_дней"/><span class="fake-radiobutton"></span>
+										<p>30 дней</p>
+									</label>
+								</div>
+								<!-- одна карточка-->
+								<div class="plate-cards__item">
+									<label>
+										<div class="label-img"><img src="img/save.jpg" alt="img" width="160"/></div>
+										<input type="radio" name="longevity" value="затрудняюсь_ответить"/><span class="fake-radiobutton"></span>
+										<p>затрудняюсь ответить</p>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="plate-footer">
+						<button class="back-btn">Назад</button>
+						<button class="next-btn">Далее</button>
+					</div>
+				</div>
+				<!-- =========== plate #5 ===========				-->
+				<div class="plate plate-5">
+					<div class="plate-header">
+						<div class="plate-header__text">
+							<p> Есть ли интернет на объекте?</p>
+						</div>
+						<div class="plate-header__number">
+							<p>5/7</p>
+						</div>
+					</div>
+					<div class="plate__progress-bar">
+						<div class="plate__progress-value"></div>
+					</div>
+					<div class="plate-body">
+						<div class="plate-form plate-row--radio">
+							<div class="plate__flex-wrapper">
+								<label>
+									<input type="radio" name="cam_imternet" value="интернет_есть"/>
+									<div class="fake-radiobutton"></div><span>ДА</span>
+								</label>
+								<label>
+									<input type="radio" name="cam_imternet" value="интернета_нет"/>
+									<div class="fake-radiobutton"></div><span>НЕТ</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="plate-footer">
+						<button class="back-btn">Назад</button>
+						<button class="next-btn">Далее</button>
+					</div>
+				</div>
+				<!-- =========== plate #6 ===========				-->
+				<div class="plate plate-6">
+					<div class="plate-header">
+						<div class="plate-header__text">
+							<p>Выберите себе подарок</p>
+						</div>
+						<div class="plate-header__number">
+							<p>6/7</p>
+						</div>
+					</div>
+					<div class="plate__progress-bar">
+						<div class="plate__progress-value"></div>
+					</div>
+					<div class="plate-body"> 
+						<div class="plate-form plate-cards">
+							<!-- одна карточка-->
+							<div class="plate-cards__item"> 
+								<label>
+									<div class="label-img"><img src="img/podarok1.jpg" alt="img" width="250"/></div>
+									<input type="radio" name="cam_podarok" value="скидка"/><span class="fake-radiobutton"></span>
+									<p>скидка 10% на монтаж</p>
+								</label>
+							</div>
+							<!-- одна карточка-->
+							<div class="plate-cards__item">
+								<label>
+									<div class="label-img"><img src="img/podarok2.jpg" alt="img" width="250"/></div>
+									<input type="radio" name="cam_podarok" value="настройка_доступа"/><span class="fake-radiobutton"></span>
+									<p>бесплатня настройка удаленного доступа</p>
+								</label>
+							</div>
+							<!-- одна карточка-->
+							<div class="plate-cards__item"> 
+								<label>
+									<div class="label-img"><img src="img/podarok3.jpg" alt="img" width="250"/></div>
+									<input type="radio" name="cam_podarok" value="материалы"/><span class="fake-radiobutton"></span>
+									<p>бесплатные материалы по выбору систем видеонаблюдения</p>
+								</label>
+							</div>
+							<!-- одна карточка-->
+							<div class="plate-cards__item">
+								<label>
+									<div class="label-img"><img src="img/podarok4.jpg" alt="img" width="250"/></div>
+									<input type="radio" name="cam_podarok" value="ip_камера"/><span class="fake-radiobutton"></span>
+									<p>бесплатная поворотная IP WI-FI камера</p>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="plate-footer">
+						<button class="back-btn">Назад</button>
+						<button class="next-btn">Далее</button>
+						<!-- =========== plate #6 ===========				-->
+					</div>
+				</div>
+				<!-- =========== plate #7 контактная форма ===========	-->
+				<div class="plate plate-7">
+					<div class="plate-header">
+						<div class="plate-header__text">
+							<p>Пожалуйста, заполните форму</p>
+						</div>
+						<div class="plate-header__number">
+							<p>7/7</p>
+						</div>
+					</div>
+					<div class="plate__progress-bar">
+						<div class="plate__progress-value"></div>
+					</div>
+					<div class="plate-body"> 
+						<div class="plate-form plate-contacts">
+							<label class="form-input">
+								<input type="text" name="userName" required="required" placeholder="Ваше имя"/>
+							</label>
+							<label class="form-input">
+								<input class="phone" type="text" name="userPhone" required="required" placeholder="Ваш телефон"/>
+							</label>
+						</div>
+					</div>
+					<div class="plate-footer">
+						<button class="back-btn">Назад</button>
+						<button class="next-btn" type="submit">Рассчитать</button>
+					</div>
+				</div>
+				<!-- =========== plate #8 контактная форма ===========-->
+				<div class="plate plate-success">
+					<div class="plate-header">
+						<div class="plate-header__text">
+							<p>Данные успешно отправлены!</p>
+						</div>
+					</div>
+					<div class="plate-body">
+						<h2>Мы свяжемся   в ближайшее время!</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="libs/jquery/jquery-3.0.0.min.js"></script>
+		<script src="libs/jquery.maskedinput.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
