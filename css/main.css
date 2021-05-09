@@ -623,6 +623,10 @@ a.politic-text:hover {
   display: none;
 }
 
+.next-btn--active {
+  display: block;
+}
+
 .plate.plate--active {
   display: -webkit-box;
   display: -ms-flexbox;
