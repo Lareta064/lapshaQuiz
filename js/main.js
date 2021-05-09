@@ -1,4 +1,4 @@
-
+console.log(`HELLO WORLD!`)
 $(document).ready(function(){
 	// маска для телефона
 	$(".phone").mask("+7(999)999-99-99");
